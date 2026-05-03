@@ -14,7 +14,7 @@ model = joblib.load("churn_model.pkl")
 scaler = joblib.load("scaler.pkl")
 feature_columns = joblib.load("feature_columns.pkl")
 
-df = pd.read_excel("data/churn.xlsx")
+df = pd.read_excel("data/Telco_customer_churn.xlsx")
 
 df["Churn Value"] = df["Churn Value"].astype(int)
 
