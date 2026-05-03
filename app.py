@@ -10,7 +10,7 @@ st.set_page_config(
 )
 
 # LOAD FILES
-model = joblib.load("churn_model.pkl")
+model = joblib.load("data/churn_model.pkl")
 scaler = joblib.load("scaler.pkl")
 feature_columns = joblib.load("feature_columns.pkl")
 
