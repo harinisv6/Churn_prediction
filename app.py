@@ -2,24 +2,18 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-
-# ==================================
 # LOAD SAVED FILES
-# ==================================
+
 model = joblib.load("churn_model.pkl")
 scaler = joblib.load("scaler.pkl")
 feature_columns = joblib.load("feature_columns.pkl")
 
-
-# ==================================
 # PAGE TITLE
-# ==================================
+
 st.title("📊 Customer Churn Prediction Dashboard")
 
-
-# ==================================
 # USER INPUTS
-# ==================================
+
 gender = st.selectbox("Gender", ["Male", "Female"])
 
 tenure = st.number_input(
@@ -69,10 +63,8 @@ total = st.number_input(
     value=1000.0
 )
 
-
-# ==================================
 # PREDICT BUTTON
-# ==================================
+
 if st.button("Predict"):
 
     # Create input dataframe
