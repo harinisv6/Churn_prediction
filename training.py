@@ -15,7 +15,9 @@ from sklearn.preprocessing import StandardScaler
 # ==========================================
 # 1. LOAD DATA
 # ==========================================
-df = pd.read_excel("data/Telco_customer_churn.xlsx")
+df = pd.read_excel(
+    "data/Telco_customer_churn.xlsx"
+)
 
 
 # ==========================================
